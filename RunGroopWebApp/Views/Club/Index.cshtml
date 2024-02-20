@@ -1,6 +1,29 @@
-﻿@*
+﻿@model IEnumerable<Club>
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
 }
-<h1>Hello ngoc anh</h1>
+<ul class="row feature-list feature-list-sm">
+    @foreach (var club in Model)
+    {
+        <li class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+                <a type="button" asp-controller="Club" asp-action="Detail" asp-route-id="@club.Id">
+                    <img class="card-img-top" src="@club.Image" alt="Card image cap">
+                </a>
+                <div class="card-body">
+                    <h4 class="card-title">@club.Title</h4>
+                    <p class="card-text">@club.Description</p>
+                </div>
+                <div class="card-footer card-footer-borderless d-flex justify-content-between">
+                    <div>
+                        <small>@club.ClubCategory</small>
+                    </div>
+                </div>
+                <a type="btn btn-success" asp-controller="Club" asp-action="Detail" asp-route-id="@club.Id"
+                    class="btn btn-sm btn-outline-secondary">View</a>
+            </div>
+        </li>
+    }
+</ul>

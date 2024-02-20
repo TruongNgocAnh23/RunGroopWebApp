@@ -65,3 +65,5 @@ D:\Projects\New folder\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\runtimes\w
 D:\Projects\New folder\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\RunGroopWebApp.csproj.AssemblyReference.cache
 D:\Projects\New folder\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\RunGroopWebApp.csproj.CopyComplete
 D:\Projects\New folder\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\RunGroopWebApp.sourcelink.json
+D:\Projects\New folder\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\CloudinaryDotNet.dll
+D:\Projects\New folder\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\Newtonsoft.Json.dll

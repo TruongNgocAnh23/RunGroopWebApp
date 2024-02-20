@@ -68,6 +68,56 @@ namespace RunGroopWebApp.Migrations
                     b.ToTable("AppUser");
                 });
 
+            modelBuilder.Entity("RunGroopWebApp.Models.Artiles", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Artiles");
+                });
+
+            modelBuilder.Entity("RunGroopWebApp.Models.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Categories");
+                });
+
             modelBuilder.Entity("RunGroopWebApp.Models.Club", b =>
                 {
                     b.Property<int>("Id")
@@ -106,6 +156,23 @@ namespace RunGroopWebApp.Migrations
                     b.ToTable("Clubs");
                 });
 
+            modelBuilder.Entity("RunGroopWebApp.Models.NewTable", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("TableName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("NewTables");
+                });
+
             modelBuilder.Entity("RunGroopWebApp.Models.Race", b =>
                 {
                     b.Property<int>("Id")
@@ -137,9 +204,42 @@ namespace RunGroopWebApp.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("AddressId");
+
                     b.HasIndex("AppUserId");
 
                     b.ToTable("Races");
+                });
+
+            modelBuilder.Entity("RunGroopWebApp.Models.User", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Avatar")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserPassword")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("RunGroopWebApp.Models.AppUser", b =>
@@ -149,6 +249,17 @@ namespace RunGroopWebApp.Migrations
                         .HasForeignKey("AddressId");
 
                     b.Navigation("Address");
+                });
+
+            modelBuilder.Entity("RunGroopWebApp.Models.Artiles", b =>
+                {
+                    b.HasOne("RunGroopWebApp.Models.User", "user")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("user");
                 });
 
             modelBuilder.Entity("RunGroopWebApp.Models.Club", b =>
@@ -170,11 +281,30 @@ namespace RunGroopWebApp.Migrations
 
             modelBuilder.Entity("RunGroopWebApp.Models.Race", b =>
                 {
+                    b.HasOne("RunGroopWebApp.Models.Address", "Address")
+                        .WithMany()
+                        .HasForeignKey("AddressId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("RunGroopWebApp.Models.AppUser", "AppUser")
                         .WithMany("Races")
                         .HasForeignKey("AppUserId");
 
+                    b.Navigation("Address");
+
                     b.Navigation("AppUser");
+                });
+
+            modelBuilder.Entity("RunGroopWebApp.Models.User", b =>
+                {
+                    b.HasOne("RunGroopWebApp.Models.Category", "category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("category");
                 });
 
             modelBuilder.Entity("RunGroopWebApp.Models.AppUser", b =>
