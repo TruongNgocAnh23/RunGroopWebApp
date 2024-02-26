@@ -34,7 +34,10 @@ namespace RunGroopWebApp.Repository
         {
             return await _context.Categories.FirstOrDefaultAsync(p => p.Id == id);
         }
-
+        public async Task<Category> GetByIdNoTracking(int id)
+        {
+            return await _context.Categories.AsNoTracking().FirstOrDefaultAsync(p => p.Id == id);
+        }
         public bool Save()
         {
             var saved = _context.SaveChanges();
@@ -43,7 +46,8 @@ namespace RunGroopWebApp.Repository
 
         public bool Update(Category category)
         {
-            throw new NotImplementedException();
+            _context.Update(category);
+            return Save();
         }
     }
 }

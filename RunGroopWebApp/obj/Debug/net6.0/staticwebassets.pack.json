@@ -5,8 +5,24 @@
       "PackagePath": "staticwebassets\\RunGroopWebApp.bundle.scp.css"
     },
     {
+      "Id": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\Images\\1.jpg",
+      "PackagePath": "staticwebassets\\Images\\1.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\Images\\logo.png",
+      "PackagePath": "staticwebassets\\Images\\logo.png"
+    },
+    {
+      "Id": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\Images\\welcome.png",
+      "PackagePath": "staticwebassets\\Images\\welcome.png"
+    },
+    {
       "Id": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
       "Id": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\favicon.ico",
