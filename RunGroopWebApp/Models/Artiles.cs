@@ -9,10 +9,11 @@ namespace RunGroopWebApp.Models
         public int Id { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
-        [ForeignKey("User")]
-        public string UserId { get; set; }
-        public User? user { get; set; }
         public DateTime? CreatedDate { get; set; }
         public DateTime? UpdatedDate { get; set; }
+        public int? CategoryId { get; set; }
+        public Category? Category { get; set; }
+        public string Thumbnail { get; set; }
+
     }
 }

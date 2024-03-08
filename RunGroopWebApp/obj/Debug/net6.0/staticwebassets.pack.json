@@ -9,12 +9,20 @@
       "PackagePath": "staticwebassets\\Images\\1.jpg"
     },
     {
+      "Id": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\Images\\close.png",
+      "PackagePath": "staticwebassets\\Images\\close.png"
+    },
+    {
       "Id": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\Images\\logo.png",
       "PackagePath": "staticwebassets\\Images\\logo.png"
     },
     {
-      "Id": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\Images\\welcome.png",
-      "PackagePath": "staticwebassets\\Images\\welcome.png"
+      "Id": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\Images\\map.png",
+      "PackagePath": "staticwebassets\\Images\\map.png"
+    },
+    {
+      "Id": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\Images\\welcome.jpg",
+      "PackagePath": "staticwebassets\\Images\\welcome.jpg"
     },
     {
       "Id": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\css\\site.css",
@@ -31,6 +39,10 @@
     {
       "Id": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\js\\test.js",
+      "PackagePath": "staticwebassets\\js\\test.js"
     },
     {
       "Id": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\lib\\bootstrap\\LICENSE",

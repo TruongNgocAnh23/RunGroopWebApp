@@ -34,6 +34,7 @@ namespace RunGroopWebApp.Controllers
                 var category = new Category
                 {
                     Name = categoryVM.Name,
+                    Content = categoryVM.Content,
                     Image = result.Url.ToString()
                 };
                 _categoryRepository.Add(category);
@@ -52,6 +53,7 @@ namespace RunGroopWebApp.Controllers
             var categoryVM = new EditCategoryViewModel
             {
                 Name = category.Name,
+                Content = category.Content,
                 Id = category.Id
             };
             return View(categoryVM);
@@ -80,6 +82,7 @@ namespace RunGroopWebApp.Controllers
                 {
                     Id = id,
                     Name = categoryVM.Name,
+                    Content = categoryVM.Content,
                     Image = photoResult.Url.ToString()
                 };
                 _categoryRepository.Update(category);

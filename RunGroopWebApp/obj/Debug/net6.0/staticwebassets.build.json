@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Iw1T4GqXrA9OFCrhBGjIwbS6QQoe+W6xsraqG564AKc=",
+  "Hash": "5gNTr7vnTXc13CjeafMBOHnTadMkB8C+Qk6EIoxIrKo=",
   "Source": "RunGroopWebApp",
   "BasePath": "_content/RunGroopWebApp",
   "Mode": "Default",
@@ -131,6 +131,25 @@
       "OriginalItemSpec": "wwwroot\\Images\\1.jpg"
     },
     {
+      "Identity": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\Images\\close.png",
+      "SourceId": "RunGroopWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\",
+      "BasePath": "_content/RunGroopWebApp",
+      "RelativePath": "Images/close.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\close.png"
+    },
+    {
       "Identity": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\Images\\logo.png",
       "SourceId": "RunGroopWebApp",
       "SourceType": "Discovered",
@@ -150,12 +169,12 @@
       "OriginalItemSpec": "wwwroot\\Images\\logo.png"
     },
     {
-      "Identity": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\Images\\welcome.png",
+      "Identity": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\Images\\map.png",
       "SourceId": "RunGroopWebApp",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\",
       "BasePath": "_content/RunGroopWebApp",
-      "RelativePath": "Images/welcome.png",
+      "RelativePath": "Images/map.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -166,7 +185,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\welcome.png"
+      "OriginalItemSpec": "wwwroot\\Images\\map.png"
+    },
+    {
+      "Identity": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\Images\\welcome.jpg",
+      "SourceId": "RunGroopWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\",
+      "BasePath": "_content/RunGroopWebApp",
+      "RelativePath": "Images/welcome.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\welcome.jpg"
     },
     {
       "Identity": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\js\\site.js",
@@ -186,6 +224,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\js\\test.js",
+      "SourceId": "RunGroopWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\",
+      "BasePath": "_content/RunGroopWebApp",
+      "RelativePath": "js/test.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\test.js"
     },
     {
       "Identity": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

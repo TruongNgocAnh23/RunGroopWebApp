@@ -17,7 +17,7 @@ namespace RunGroopWebApp.Data
         public DbSet<Category> Categories { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Artiles> Artiles { get; set; }
-
+        public DbSet<ArtilesImage> ArtilesImage { get; set; }
 
     }
 }

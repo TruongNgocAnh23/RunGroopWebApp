@@ -264,12 +264,19 @@ namespace RunGroopWebApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<int?>("CategoryId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Content")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Thumbnail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -278,15 +285,33 @@ namespace RunGroopWebApp.Migrations
                     b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("UserId")
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.ToTable("Artiles");
+                });
+
+            modelBuilder.Entity("RunGroopWebApp.Models.ArtilesImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int?>("ArtilesId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Image")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("ArtilesId");
 
-                    b.ToTable("Artiles");
+                    b.ToTable("ArtilesImage");
                 });
 
             modelBuilder.Entity("RunGroopWebApp.Models.Category", b =>
@@ -296,6 +321,10 @@ namespace RunGroopWebApp.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Image")
                         .IsRequired()
@@ -498,13 +527,20 @@ namespace RunGroopWebApp.Migrations
 
             modelBuilder.Entity("RunGroopWebApp.Models.Artiles", b =>
                 {
-                    b.HasOne("RunGroopWebApp.Models.User", "user")
+                    b.HasOne("RunGroopWebApp.Models.Category", "Category")
                         .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("CategoryId");
 
-                    b.Navigation("user");
+                    b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("RunGroopWebApp.Models.ArtilesImage", b =>
+                {
+                    b.HasOne("RunGroopWebApp.Models.Artiles", "Artiles")
+                        .WithMany()
+                        .HasForeignKey("ArtilesId");
+
+                    b.Navigation("Artiles");
                 });
 
             modelBuilder.Entity("RunGroopWebApp.Models.Club", b =>

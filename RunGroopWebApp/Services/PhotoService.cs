@@ -20,6 +20,7 @@ namespace RunGroopWebApp.Services
         }
         public async Task<ImageUploadResult> AddPhotoAsync(IFormFile file)
         {
+
             var updloadResult = new ImageUploadResult();
             if(file.Length > 0)
             {

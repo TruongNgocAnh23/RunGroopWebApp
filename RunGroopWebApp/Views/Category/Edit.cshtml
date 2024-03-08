@@ -39,6 +39,12 @@
                                 </div>
                                 <div class="form-row form-group">
                                     <div class="col">
+                                        <input value="@Model.Content" asp-for="Content" class="form-control form-control-lg" placeholder="Category content" />
+                                        <span asp-validation-for="Content" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="form-row form-group">
+                                    <div class="col">
                                         <input asp-for="Image" type="file" class="form-control form-control-lg" placeholder="Image" />
                                     </div>
                                 </div>
