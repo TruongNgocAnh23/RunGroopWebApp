@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\Images\\close.png"
     },
     {
+      "Id": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\Images\\logo.ico",
+      "PackagePath": "staticwebassets\\Images\\logo.ico"
+    },
+    {
       "Id": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\Images\\logo.png",
       "PackagePath": "staticwebassets\\Images\\logo.png"
     },

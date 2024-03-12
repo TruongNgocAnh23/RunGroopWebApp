@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RYAsODphDYcrv7p1Wca6NGTpGYUYVvCw3nX4MxYxHUw=",
+  "Hash": "v+V5D+QIt4g8KwPylTg4Nehk10TextAHa9H6fKL54Ro=",
   "Source": "RunGroopWebApp",
   "BasePath": "_content/RunGroopWebApp",
   "Mode": "Default",
@@ -148,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\close.png"
+    },
+    {
+      "Identity": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\Images\\logo.ico",
+      "SourceId": "RunGroopWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\",
+      "BasePath": "_content/RunGroopWebApp",
+      "RelativePath": "Images/logo.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\logo.ico"
     },
     {
       "Identity": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\Images\\logo.png",
