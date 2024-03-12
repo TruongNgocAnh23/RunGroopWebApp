@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5gNTr7vnTXc13CjeafMBOHnTadMkB8C+Qk6EIoxIrKo=",
+  "Hash": "RYAsODphDYcrv7p1Wca6NGTpGYUYVvCw3nX4MxYxHUw=",
   "Source": "RunGroopWebApp",
   "BasePath": "_content/RunGroopWebApp",
   "Mode": "Default",
@@ -205,6 +205,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\welcome.jpg"
+    },
+    {
+      "Identity": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\js\\scripts.js",
+      "SourceId": "RunGroopWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\",
+      "BasePath": "_content/RunGroopWebApp",
+      "RelativePath": "js/scripts.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\scripts.js"
     },
     {
       "Identity": "D:\\Projects\\New folder\\RunGroopWebApp\\RunGroopWebApp\\wwwroot\\js\\site.js",
