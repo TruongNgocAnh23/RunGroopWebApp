@@ -29,9 +29,9 @@ namespace RunGroopWebApp.Repository
         public async Task<IEnumerable<Artiles>> GetAll(string categoryId)
         {
              if (categoryId.Length > 0) 
-               return await _context.Artiles.Where(p=>p.CategoryId == int.Parse(categoryId)).ToListAsync();
+               return await _context.Artiles.OrderByDescending(o=>o.Id).Where(p=>p.CategoryId == int.Parse(categoryId)).ToListAsync();
              else
-               return await _context.Artiles.ToListAsync();
+               return await _context.Artiles.OrderByDescending(o => o.Id).ToListAsync();
         }
         public async Task<IEnumerable<Artiles>> GetAllSearch(SearchViewModel viewModel)
         {

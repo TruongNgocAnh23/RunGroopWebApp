@@ -19,7 +19,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-    
 </head>
 <body id="page-top">
     <!-- Navigation-->
@@ -51,7 +50,7 @@
     <form asp-controller="Home" asp-action="Index">
         <section class="page-section" id="about">
             <div class="container">
-                <div class="text-center">
+                <div class="text-ce nter">
                     @* <h2 class="section-heading text-uppercase">Địa điểm du lịch nổi bật</h2> *@
                     @* <h3 class="section-subheading text-muted">ĐỊA ĐIỂM DU LỊCH NỔI BẬT</h3> *@
                 </div>
@@ -141,18 +140,9 @@
     <div class="py-5">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-3 col-sm-6 my-3">
-                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="~/Images/1.jpg" alt="..." aria-label="Microsoft Logo" /></a>
-                </div>
-                <div class="col-md-3 col-sm-6 my-3">
-                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="~/Images/1.jpg" alt="..." aria-label="Google Logo" /></a>
-                </div>
-                <div class="col-md-3 col-sm-6 my-3">
-                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="~/Images/1.jpg" alt="..." aria-label="Facebook Logo" /></a>
-                </div>
-                <div class="col-md-3 col-sm-6 my-3">
-                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="~/Images/1.jpg" alt="..." aria-label="IBM Logo" /></a>
-                </div>
+               @*  <div class="col-md-3 col-sm-6 my-3">
+                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="~/Images/kakaotalk.png" alt="..." aria-label="Microsoft Logo" /></a>
+                </div> *@
             </div>
         </div>
     </div>
@@ -271,7 +261,7 @@
                                                 @if (@artiles.Id == @image.ArtilesId)
                                                 {
                                                     <div class="carousel-item active" id="model@(image.ArtilesId)" aria-labelledby="model@(image.ArtilesId)Label">
-                                                        <img style="width: 400px; height: 300px" src="@image.Image" class="d-block w-100" alt="Slide 1">
+                                                        <img style="height: 100%" src="@image.Image" class="d-block w-100" alt="Slide 1">
                                                     </div>
                                                 }
                                             }
@@ -289,7 +279,7 @@
                                     @* <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." /> *@
 
                                     @* end *@
-                                    <p>@artiles.Content</p>
+                                    <p style="text-align: left">@artiles.Content</p>
                                     @*  <ul class="list-inline">
                                 <li>
                                 <strong>Client:</strong>
@@ -320,7 +310,9 @@
     <!-- * *                               SB Forms JS                               * *-->
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    @* <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> *@
+    @* <script src="https://cdn.startbootstrap.co
+
+    m/sb-forms-latest.js"></script> *@
 
 </body>
 </html>
